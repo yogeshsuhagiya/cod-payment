@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Yogesh Suhagiya
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future. If you wish to customize this module for your needs.
+ * Please contact Yogesh Suhagiya (yksuhagiya@gmail.com)
+ *
+ * @category    Practical
+ * @package     Practical_Payment
+ * @author      Yogesh Suhagiya (yksuhagiya@gmail.com)
+ * @copyright   Copyright (c) 2022
+ * @license     https://github.com/yogeshsuhagiya/cod-payment/blob/main/LICENSE
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="payment_method_is_active">
+        <observer name="practical_payment_allow_specific_customer" instance="Practical\Payment\Observer\AllowByEmail" />
+    </event>
+</config>
